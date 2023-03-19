@@ -1,0 +1,86 @@
+#chapter02-2
+#파이썬 왕기초
+#파이썬 변수
+
+
+#기본선언
+n=700
+
+print(n)
+print(type(n))#type은 n의 자료형을 보여줌 
+
+#동시선언
+x=y=z=700
+print(z,y,z)
+
+#선언
+var=75
+#재선언
+var="change"
+
+print(var)
+print(type(var)) #'str'로 나옴 
+
+#object references
+#변수의 값이 할당 상태
+#1.타입에 맞는 오브젝트 생성
+#2.값 생성
+#3. 콘솔 출력
+#예시1
+print(300)
+print(int(300))
+
+#예시2
+#n->777
+n=777
+print(n,type(n))
+print()
+
+m=n
+# m-> 777 <-n
+print(m, n) # ,뒤에는 띄어쓰기를 한번 해주는것이 좋음
+print(type(m),type(n))
+print()
+
+m=400
+print(m, n) # ,뒤에는 띄어쓰기를 한번 해주는것이 좋음
+print(type(m),type(n))
+print()
+
+#id(identity)확인 : 객체의 고유값 확인
+m = 800
+n = 655
+print(id(m)) #출력하면 800이 나오는게 아님 !! 프로그램 내부에 있는 800번의 ID가 출력됨
+print(id(n))
+print(id(m)==id(n)) # m과 n의 id가 같냐고 물어보는거  false 라고 나올거임
+print()
+
+m =800
+n= 800
+print(id(m)) #출력하면 800이 나오는게 아님 !! 프로그램 내부에 있는 800번의 ID가 출력됨
+print(id(n))
+print(id(m)==id(n)) # m과 n의 id가 같냐고 물어보는거  true 라고 나올거임
+print()
+
+#다양한 변수 선언
+#camel case : numberOfCollegeGraduates-> Method
+#Pascal Case : NumberOfCollegeGraduates -> class를 선언할때 (필수는 아님)
+#Snake case(파이썬에서 많이 사용 , 뱀처럼 이어지는 소문자를 _로 이어줌) : number_of_coellge_ 
+
+#스네이크웅앵ex
+student_grade=3
+#허용하는 변수 선언 방법
+age=1
+Age=1
+aGe=1
+AGE=1
+a_g_e=5
+_age=6
+age_=7
+_AGE=8 # 다됨
+# 1age=1 숫자로 시작하면 오류남
+
+#예약어는 변수명으로 불가능
+#예약어 = 이미 파이썬에서 쓰는 언어
+#ex) for as class 이런거..
+#google에서 python reserve words라고 검색하면 나올거임 , 아니면 파이썬 예약어 ㄱㄱ
